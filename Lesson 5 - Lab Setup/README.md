@@ -37,7 +37,7 @@ _Note : https://app.vagrantup.com/boxes/search (you can pick any other vagrant b
 ```
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/bionic64"
-  config.vm.network :private_network, ip: "192.168.56.12"
+  config.vm.network :private_network, ip: "192.168.56.11"
   config.vm.network "forwarded_port", guest: 22, host: 2222
 end
 ```
@@ -56,7 +56,17 @@ _Note : vagrant halt - for stoping the VM_
 vagrant ssh
 ```
 
-7. Repeat the same step if you need 1 more VM (use another IP)
+7. Repeat the same step if you need 1 more VM (use another IP and host port)
+
+_Example:_
+
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/bionic64"
+  config.vm.network :private_network, ip: "192.168.56.12"
+  config.vm.network "forwarded_port", guest: 22, host: 1234
+end
+```
 
 **Passwordless SSH to VM**
 
@@ -77,5 +87,5 @@ _Note: Keep pressing "Enter" button_
 4. Now you should be able to use ssh command to connect to the VM
 
 ```
-ssh vagrant@192.168.56.12
+ssh vagrant@192.168.56.11
 ```
