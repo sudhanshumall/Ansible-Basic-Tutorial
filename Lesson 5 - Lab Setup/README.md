@@ -60,7 +60,7 @@ vagrant ssh
 
 **Passwordless SSH to VM**
 
-Note : Below steps can also be done if you are using any cloud provider machines (AWS EC2 or Azure VM)
+_Note : Below steps can also be done if you are using any cloud provider machines (AWS EC2 or Azure VM)_
 
 1. Create authentication ssh-keygen keys on you localhost where Ansible is installed
 
