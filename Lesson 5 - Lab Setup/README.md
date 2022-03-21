@@ -1,6 +1,8 @@
 ## Lab Setup using Oracle Virtual Box and Vagrant
 
-![image](https://drive.google.com/uc?export=view&id=1za9mqAB8ICgKQIXh_5fOZMxr2UE92gYW)
+<p align="center">
+  <img width="600" height="300" src="https://drive.google.com/uc?export=view&id=1za9mqAB8ICgKQIXh_5fOZMxr2UE92gYW">
+</p>
 
 - Download Oracle Virtual Box from https://www.virtualbox.org/wiki/Downloads
 
@@ -46,7 +48,7 @@ end
 vagrant up
 ```
 
-Note : vagrant halt - for stoping the VM
+_Note : vagrant halt - for stoping the VM_
 
 6. SSH to the VM using vagrant command
 
@@ -54,9 +56,10 @@ Note : vagrant halt - for stoping the VM
 vagrant ssh
 ```
 
-6. Repeat the same step if you need 1 more VM (use another IP)
+7. Repeat the same step if you need 1 more VM (use another IP)
 
 **Passwordless SSH to VM**
+
 Note : Below steps can also be done if you are using any cloud provider machines (AWS EC2 or Azure VM)
 
 1. Create authentication ssh-keygen keys on you localhost where Ansible is installed
@@ -65,7 +68,7 @@ Note : Below steps can also be done if you are using any cloud provider machines
 ssh-keygen
 ```
 
-Note: Keep pressing "Enter" button
+_Note: Keep pressing "Enter" button_
 
 2. Above command will generate the keys (public and private) inside ~/.ssh/ folder with default name as "id_rsa" and "id_rsa.pub"
 
