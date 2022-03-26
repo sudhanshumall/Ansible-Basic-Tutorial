@@ -10,6 +10,8 @@
 
 - Download Vagrant from https://www.vagrantup.com/downloads
 
+_Note: Here in this tutorial, we are using our local machine as Ansible Controller and it is totally fine if you want to use VM as a Ansible Controller. Only change would be to create a new extra VM and install Ansible on it, so it becomes your Ansible Controller and rest all steps would be same_
+
 **Steps to create VM using Vagrant**
 
 1. Create some folder where you want to keep your vagrant files
