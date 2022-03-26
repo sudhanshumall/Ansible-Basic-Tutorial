@@ -1,6 +1,6 @@
 ## Ansible Installation
 
-**Prerequisites –**
+**Prerequisites :**
 
 ```
 Controller Node - Python 2.7 or later
