@@ -1,0 +1,8 @@
+--- # Start of YAML file (Optiona)
+- name: Sample Playbook # Name of the Ansible Playbook
+  hosts: target-node1 # Place to define target nodes where this playbook needs to be executed
+  vars: # Optional
+  tasks: # Here you define you single tasks or list of tasks
+    - name: Check connectivity with target node # Name of the tasks
+      ping: # Here comes the module
+... # End of YAML file (Optional)
