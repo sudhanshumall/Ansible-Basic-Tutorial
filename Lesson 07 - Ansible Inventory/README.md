@@ -4,15 +4,17 @@
 
 - Default location - /etc/ansible/hosts
 
-- You can define different inventory file at the command line by using –i option
+- You can define different custom inventory file at the command line by using –i option
+
+- All the hosts in the Ansible inventory file belongs to **all** group(by default)
 
 **Example**
 
 ```
-ansible-playbook –i <inventory-file-path> ansible-playbook-file
+ansible-playbook –i <custom-inventory-file-path> ansible-playbook-file
 ```
 
-_Note : If you do not specify custom inventory file using "-i" option, then Ansible will look for the hosts in the /etc/ansible/hosts inventory file_
+_**Note** : If you do not specify custom inventory file using "-i" option, then Ansible will look for the hosts in the /etc/ansible/hosts inventory file_
 
 - The format in the inventory file (/etc/ansible/hosts) is in the INI format
 
