@@ -20,7 +20,7 @@ _Below is the structure of an Ansible playbook_
 
 ![image](https://drive.google.com/uc?export=view&id=1QsWURxTdBy_ioIvIc__W-trBz3p3Reb9)
 
-**Playbook explanation** : In this playbook, we have only 1 task and it is using an Ansible module called **ping**, which we are using to check the connectivity between Ansible Controller machine and target node
+**Playbook explanation** : In this playbook named **Sample Playbook**, we have only 1 task and it is using an Ansible module called **ping**, which it using to check the connectivity between Ansible Controller machine (localhost in this case) and target machine (target-node1)
 
 **To Run the Playbook** : ansible-playbook example-1-sample-playbook.yaml
 
