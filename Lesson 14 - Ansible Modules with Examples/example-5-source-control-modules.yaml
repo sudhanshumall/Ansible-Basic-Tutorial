@@ -1,0 +1,9 @@
+---
+- name: source control module examples
+  hosts: target-node1
+  tasks:
+    - name: clone git repo
+      git:
+        repo: https://github.com/sudhanshumall/ansible-playbooks.git
+        dest: /home/vagrant/ansible-playbooks
+...

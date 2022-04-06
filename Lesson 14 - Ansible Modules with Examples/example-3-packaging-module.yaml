@@ -1,0 +1,20 @@
+---
+- name: packaging module example
+  hosts: target-node1
+  become: yes
+  tasks:
+    - name: install git
+      apt:
+        name: git
+        state: present
+
+    - name: uninstall apache2
+      apt:
+        name: apache2
+        state: absent
+
+    - name: install nginx
+      apt:
+        name: nginx
+        state: present
+...

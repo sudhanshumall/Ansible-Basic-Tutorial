@@ -1,0 +1,46 @@
+---
+- name: files module playbook examples
+  hosts: target-node1,target-node2
+  tasks:
+    - name: fetch the file from remote/target machine
+      fetch:
+        src: /home/vagrant/example-1-script.log
+        dest: .
+    
+    - name: change file ownership, group and its permission
+      become: yes
+      file:
+        path: /home/vagrant/example-1-script.log
+        owner: root
+        group: root
+        mode: '0644'
+    
+    - name: find files older than 2 days
+      find:
+        paths: /home/vagrant/
+        age: 2d
+        recurse: yes
+
+    - name: create an empty file for lineinfile module example
+      file:
+        path: /home/vagrant/lineinfile.txt
+        state: touch
+
+    - name: create an empty file for blockinfile module example
+      file:
+        path: /home/vagrant/blockinfile.txt
+        state: touch
+
+    - name: insert a line in file
+      lineinfile:
+        path: /home/vagrant/lineinfile.txt
+        line: "this is a line in a file"
+
+    - name: insert or update block of lines in a file
+      blockinfile:
+        path: /home/vagrant/blockinfile.txt
+        block: |
+          this is the block
+          of line
+          in a file
+...

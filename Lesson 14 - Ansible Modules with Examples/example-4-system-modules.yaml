@@ -1,0 +1,38 @@
+---
+- name: system modules playbook examples
+  hosts: target-node1
+  tasks:
+    - name: test remote host connection
+      ping:
+
+    - name: make sure nginx is running
+      become: yes
+      service:
+        name: nginx
+        state: started
+      
+    - name: setup cron
+      cron:
+        name: run script
+        minute: "0"
+        hour: "5"
+        job: "/home/vagrant/example-1-script.sh"
+    
+    - name: add a new group
+      become: yes
+      group:
+        name: newtestgroup
+        state: present
+
+    - name: add a new user
+      become: yes
+      user:
+        name: newtestuser
+        state: present
+        group: newtestgroup
+
+    - name: reboot machine
+      become: yes
+      reboot:
+...
+
