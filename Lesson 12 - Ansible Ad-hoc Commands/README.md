@@ -36,8 +36,4 @@ _**Note** : In above Ansible ad-hoc command, we have used **become** keyword bec
 
 **Exercises** : Check your knowledge
 
-1. Write an Ansible ad-hoc command to copy a file to the target nodes
-2. Write an Ansible ad-hoc command to install nginx package
-3. Write an Ansible ad-hoc command to change the ownership of the file "empty-file-ad-hoc.txt" (which we created in this lesson) to root
-4. Write an Ansible ad-hoc command to delete the empty file "empty-file-ad-hoc.txt"
-5. Write an Ansible ad-hoc command to check the uptime of the target nodes to check from how long the target nodes are running
+Please check **exercises** file added in this lesson and try to complete it.
