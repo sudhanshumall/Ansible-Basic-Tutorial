@@ -1,8 +1,8 @@
-## Exercises
+Exercises
 
 1. Create a new CentOS based VM, setup password less ssh and add create a new inventory file with new target host details
 
-_**Note** : For CentOS based VM, you can use below Vagrantfile_
+Note : For CentOS based VM, you can use below Vagrantfile
 
 ```
 Vagrant.configure("2") do |config|

@@ -1,4 +1,4 @@
-## Exercises
+Exercises
 
 1. Write an Ansible ad-hoc command to copy a file to the target nodes
 2. Write an Ansible ad-hoc command to install nginx package
