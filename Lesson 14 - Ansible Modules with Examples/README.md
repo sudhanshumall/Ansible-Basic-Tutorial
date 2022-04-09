@@ -185,3 +185,22 @@ Ansible Cloud module works with multiple cloud providers like AWS, GCP, Azure, D
 ```
 
 and many more modules
+
+**Exercises** : Check your knowledge
+
+1. Create a new CentOS based VM, setup password less ssh and add create a new inventory file with new target host details
+
+_**Note** : For CentOS based VM, you can use below Vagrantfile_
+
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "centos/7"
+  config.vm.network :private_network, ip: "192.168.56.18"
+  config.vm.network "forwarded_port", guest: 22, host: 1111
+end
+```
+
+2. Write an Ansible Ad-hoc command using ping module to check if the new target node is reachable or not
+3. Write an Ansible Playbook using packaging module to install git and nginx on new CentOS based target host
+4. Write an Ansible Playbook using service module to make sure nginx is started
+5. Write an Ansible Playbook using file module to create a new file on target node and change its ownership to root
