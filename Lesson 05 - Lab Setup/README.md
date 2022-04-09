@@ -91,3 +91,18 @@ _Note: Keep pressing "Enter" button_
 ```
 ssh vagrant@192.168.56.11
 ```
+
+**Disable Host Key Checking for Running Ansible Ad-hoc commands or Playbooks**
+
+In previous section, when you fired "**ssh vagrant@192.168.56.11**", you might have been asked for the authenticity of the host you are trying to ssh.
+Similarly, when you run an ansible playbook or ad-hoc command after setting a new VM, you will be asked the same and it can create proble with your automation work.
+This is the default behaviour of ssh and is asked for the very fist time when you do ssh to a new machine, like below:
+
+![image](https://drive.google.com/uc?export=view&id=1UItB8ZinBlMoj3Bs5YXQFFgxkIWscrBl)
+
+To disable host key checking, all you have to do is to add **host_key_checking = False** in your /etc/ansible/ansible.cfg file, so your ansible config file (like below), so you could run your ansible playbook or ad-hoc command without any manual intervention:
+
+```
+[defaults]
+host_key_checking = False
+```
