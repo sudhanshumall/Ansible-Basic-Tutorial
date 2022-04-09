@@ -57,7 +57,7 @@ _**Note** : Difference between **script** and **shell** command module is that, 
 
 **Output** :
 
-![image](https://drive.google.com/uc?export=view&id=1Bl_3nyehuqbwo7Ah7Il1lofHE26cqgmN)
+![image](https://drive.google.com/uc?export=view&id=1KGpljPExvKPO8KXUZmkaQ98X9Gc17Hw7)
 
 **2. Files Modules**
 
