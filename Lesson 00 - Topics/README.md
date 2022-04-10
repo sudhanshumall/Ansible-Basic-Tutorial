@@ -13,7 +13,7 @@
 11. Writing Ansible Playbook
 12. Ansible Ad-hoc Commands
 13. Running Ansible Playbook
-14. Ansible Modules with Examples
+14. Ansible Modules
 15. Ansible Variables
 16. Ansible Loops
 17. Ansible Facts
