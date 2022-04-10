@@ -1,0 +1,13 @@
+---
+- name: importing variable from file example
+  hosts: target-node1
+  vars_files:
+    - example-7-variable-file.yaml
+  tasks:
+    - name: import var from file
+      debug:
+        msg: "Hello {{ myname }}"
+...
+
+
+        

@@ -1,0 +1,16 @@
+---
+- name: variable with dictionary example
+  hosts: target-node1
+  vars:
+    students:
+      Sudhanshu:
+        age: 30
+        place: bangalore
+      Himanshu:
+        age: 35
+        place: noida
+  tasks:
+    - name: ansible dictionary variable example
+      debug:
+        msg: "{{ students.Sudhanshu.age }}"
+...

@@ -1,0 +1,8 @@
+---
+- name: passing variable from command line
+  hosts: target-node1
+  tasks:
+    - name: command line variable
+      debug:
+        msg: "Hello {{ myname }}"
+...

@@ -1,0 +1,8 @@
+---
+- name: variable in inventory file example
+  hosts: target-node1
+  tasks:
+    - name: variable in inventory file example
+      debug:
+        msg: "This playbook is running on {{ ansible_host }}"
+...

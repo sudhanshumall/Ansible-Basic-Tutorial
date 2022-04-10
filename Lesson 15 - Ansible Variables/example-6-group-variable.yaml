@@ -1,0 +1,8 @@
+---
+- name: variable defined in group var file
+  hosts: mygroup
+  tasks:
+    - name: variable in group var file
+      debug:
+        msg: "This playbook is using a group variable i.e ansible_user and it value is {{ ansible_user }}"
+...

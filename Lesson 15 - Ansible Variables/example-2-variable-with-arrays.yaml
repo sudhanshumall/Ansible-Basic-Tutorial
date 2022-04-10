@@ -1,0 +1,14 @@
+---
+- name: variable with arrays example
+  hosts: target-node1
+  vars:
+    fruits:
+      - apple
+      - banana
+      - grapes
+      - orange
+  tasks:
+    - name: ansible list variable example
+      debug:
+        msg: "{{ fruits[1] }}"
+...

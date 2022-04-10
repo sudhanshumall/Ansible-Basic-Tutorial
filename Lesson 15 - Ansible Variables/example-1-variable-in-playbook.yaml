@@ -1,0 +1,10 @@
+---
+- name: example of variable inside playbook
+  hosts: target-node1
+  vars:
+    message: Hello Sudhanshu
+  tasks:
+    - name: ansible variable basic use case
+      debug:
+        msg: "{{ message }}"
+...

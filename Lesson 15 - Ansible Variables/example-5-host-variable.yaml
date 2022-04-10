@@ -1,0 +1,8 @@
+---
+- name: variable defined in host var file
+  hosts: target-node1
+  tasks:
+    - name: variable in host var file
+      debug:
+        msg: "This playbook is running on {{ ansible_host }} and user is {{ ansible_user }}"
+...

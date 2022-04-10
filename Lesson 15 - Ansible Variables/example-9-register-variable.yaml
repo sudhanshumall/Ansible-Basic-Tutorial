@@ -1,0 +1,11 @@
+---
+- name: register variable example
+  hosts: target-node1
+  tasks:
+    - name: get hostname of the target machine
+      command: hostname
+      register: output
+    - name: printing hostname value
+      debug:
+        var: output.stdout
+...
