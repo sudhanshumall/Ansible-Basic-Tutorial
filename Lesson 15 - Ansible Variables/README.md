@@ -316,6 +316,6 @@ register: command_output
 
 **Task 2** : Name of task 2 is **"printing hostname value"**. It is using debug module to print the value of the variable stored using register.
 
-Output :
+**Output** :
 
 ![image](https://drive.google.com/uc?export=view&id=1p_K4KsCm8XEB9yR1RVAZV29gYCrLBICX)
