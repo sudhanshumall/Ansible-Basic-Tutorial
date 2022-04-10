@@ -16,4 +16,5 @@
 14. Ansible Modules with Examples
 15. Ansible Variables
 16. Ansible Loops
-17. Ansible Conditionals
+17. Ansible Facts
+18. Ansible Conditionals
