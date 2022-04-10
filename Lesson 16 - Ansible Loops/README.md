@@ -29,5 +29,3 @@ Suppose we have to create 3 files, let's see how we can create it without using 
 **Output** :
 
 ![image](https://drive.google.com/uc?export=view&id=13o_3xBWPO9dPZhJfI5xj1P_KTFUO1rBh)
-
-**Note** : **{{ item }}** needs to be enclosed between single quotes ('**{{ item }}**') or double quotes ("**{{ item }}**") when used alone (without any other string attached to it)
