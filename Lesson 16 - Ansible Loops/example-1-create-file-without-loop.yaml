@@ -1,0 +1,17 @@
+---
+- name: create three files
+  hosts: target-node1
+  tasks:
+    - name: create empty file
+      file:
+        path: /home/vagrant/empty-file1.txt
+        state: touch
+    - name: create empty file
+      file:
+        path: /home/vagrant/empty-file2.txt
+        state: touch
+    - name: create empty file
+      file:
+        path: /home/vagrant/empty-file3.txt
+        state: touch
+...

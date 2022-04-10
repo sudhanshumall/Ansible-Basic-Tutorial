@@ -1,0 +1,13 @@
+---
+- name: delete three files
+  hosts: target-node1
+  tasks:
+    - name: delete three empty files
+      file:
+        path: /home/vagrant/{{ item }}
+        state: absent
+      loop:
+        - empty-file1.txt
+        - empty-file2.txt
+        - empty-file3.txt
+...
