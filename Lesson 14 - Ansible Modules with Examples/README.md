@@ -12,13 +12,13 @@ Before we go deep into Ansible Modules, lets also create our custom inventory fi
 
 **Steps to create custom inventory file**
 
-1. Create a inventory file
+- Create a inventory file
 
 ```
 touch my-inventory
 ```
 
-2. Paste below target node details in the new inventory file i.e "my-inventory"
+- Paste below target node details in the new inventory file i.e "my-inventory"
 
 ```
 target-node1 ansible_host=192.168.56.11 ansible_user=vagrant
@@ -53,7 +53,11 @@ _Now let's see some of the modules with real time examples :_
 
 _**Note** : Difference between **script** and **shell** command module is that, when using **script** module, you don't need to copy the script to the remote machine, however in case of **shell** module, you need to copy the script first to the target nodes (hence **task 3** is required) in case of **shell** module_
 
-**To Run the Playbook** : ansible-playbook -i my-inventory example-1-commands-modules.yaml
+**To Run the Playbook** :
+
+```
+ansible-playbook -i my-inventory example-1-commands-modules.yaml
+```
 
 **Output** :
 
@@ -92,7 +96,11 @@ As of now this doesn't print the list of files and we will see in Ansible Variab
 
 _**Note** : Task 4 and 5 both are common and creating an empty file. We will see in future lesson on how we can improve this using loop_
 
-**To Run the Playbook** : ansible-playbook -i my-inventory example-2-files-modules.yaml
+**To Run the Playbook** :
+
+```
+ansible-playbook -i my-inventory example-2-files-modules.yaml
+```
 
 **Output** :
 
@@ -116,7 +124,11 @@ _**Note** : Task 4 and 5 both are common and creating an empty file. We will see
 
 **Task 3** : Name of task 3 is **"install nginx"**. It is also using **apt** module and installing nginx (using state as **present**) on target-node1.
 
-**To Run the Playbook** : ansible-playbook -i my-inventory example-3-packaging-module.yaml
+**To Run the Playbook** :
+
+```
+ansible-playbook -i my-inventory example-3-packaging-module.yaml
+```
 
 **Output** :
 
@@ -152,7 +164,11 @@ In this, the **state** which is mentioned as **started** ensures that nginx is r
 
 **Task 6** : Name of task 6 is **"reboot machine"**. It is using **reboot** module and will reboot your target node which in our case is target-node1.
 
-**To Run the Playbook** : ansible-playbook -i my-inventory example-4-system-modules.yaml
+**To Run the Playbook** :
+
+```
+ansible-playbook -i my-inventory example-4-system-modules.yaml
+```
 
 **Output** :
 
@@ -172,7 +188,11 @@ In this, the **state** which is mentioned as **started** ensures that nginx is r
 
 **Task 1** : Name of task 1 is **"clone git repo"** and is using **git** module. Here this task will create a new directory called **ansible-playbooks** and clone the contents of the repo which we are cloning.
 
-**To Run the Playbook** : ansible-playbook -i my-inventory example-5-source-control-modules.yaml
+**To Run the Playbook** :
+
+```
+ansible-playbook -i my-inventory example-5-source-control-modules.yaml
+```
 
 **Output** :
 
