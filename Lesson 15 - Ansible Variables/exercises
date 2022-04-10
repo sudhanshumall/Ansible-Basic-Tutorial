@@ -1,0 +1,13 @@
+Exercises
+
+1. Write an ansible playbook using debug module to print a variable used in the playbook defined using var YAML tag.
+2. Write an ansible playbook with variable defined as array and print the same using debug module.
+3. Write an ansible playbook with variable defined as dictionary and print the same using debug module.
+4. Create host variable called "ansible_host" for the new CentOS based VM you created in previous lesson exercise
+5. Write an ansible playbook and run the task on the CentOS based VM and try printing the defined host variable (ansible_host) using debug module
+6. Create group variable called "ansible_user" for the new CentOS based VM you created in previous lesson exercise
+7. Write an ansible playbook and run the task on the CentOS based VM and try printing the defined group variable (ansible_user) using debug module
+8. Write an ansible playbook which imports another YAML file where variable is defined and print it using debug module.
+9. Write an ansible playbook and using "extra-vars" define the variable while running the playbook and print it using debug module
+10. Lets recall "Lesson 14 - Ansible Modules with Examples" and check "example-1-commands-modules.yaml" where in task 1 we are listing the files under /home/vagrant but there was no output of files seen when playbook was triggered.
+    Now, create an ansible playbook using the task 1 of "example-1-commands-modules.yaml" and print the list of files bu storing its output using register variable.

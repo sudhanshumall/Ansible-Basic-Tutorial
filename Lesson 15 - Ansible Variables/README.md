@@ -319,3 +319,7 @@ register: command_output
 **Output** :
 
 ![image](https://drive.google.com/uc?export=view&id=1p_K4KsCm8XEB9yR1RVAZV29gYCrLBICX)
+
+**Exercises** : Check your knowledge
+
+Please check **exercises** file added in this lesson and try to complete it.
