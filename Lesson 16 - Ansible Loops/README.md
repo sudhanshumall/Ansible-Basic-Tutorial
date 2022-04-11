@@ -24,11 +24,11 @@ ansible-playbook example-1-create-file-without-loop.yaml
 
 **Note** : You can see in **Playbook Exmaple 1**, we have repetitive code for same task, now let's make use of ansible loops and write an asnible playbook to delete these three files using ansible loop directive
 
-**Playbook Exmaple 1** :
+**Playbook Exmaple 2** :
 
 ![image](https://drive.google.com/uc?export=view&id=1GbqQiZD6UzX2S9FU_S3dmzjcDqqA8XMV)
 
-**Playbook Exmaple 1 Explanation** : Here in **example-2-delete-file-with-loop.yaml** ansible playbook, now instead of 3 different tasks we have only 1 task and using loop directive.
+**Playbook Exmaple 2 Explanation** : Here in **example-2-delete-file-with-loop.yaml** ansible playbook, now instead of 3 different tasks we have only 1 task and using loop directive.
 
 **Task 1** : Name of task 1 is **"delete three empty files"** and instead of using 3 different task for same work, now we are using loop directive and acheiving the same work in just 1 task. Here the loop directive executes the same task multiple times and stores the value of each item in a variable called **item**.
 
