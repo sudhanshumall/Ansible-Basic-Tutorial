@@ -1,0 +1,8 @@
+---
+- name: ansible facts example playbook
+  hosts: target-node1
+  tasks:
+    - name: ansible facts variables
+      debug:
+        msg: '{{ ansible_facts }}'
+...

@@ -1,0 +1,10 @@
+---
+- name: ansible facts example playbook
+  hosts: target-node1
+  gather_facts: no
+  tasks:
+    - name: ansible facts variables
+      debug:
+        msg: '{{ ansible_facts }}'
+...
+
