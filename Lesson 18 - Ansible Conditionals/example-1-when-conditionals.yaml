@@ -1,0 +1,17 @@
+---
+- name : install packages
+  hosts: target-node1
+  become: yes
+  tasks:
+    - name: install package on ubuntu
+      apt:
+        name: apache2
+        state: present
+      when: ansible_os_family == "Debian"
+    - name: install package on centos
+      yum:
+        name: httpd
+        state: present
+      when: ansible_os_family == "RedHat"
+...
+

@@ -1,0 +1,13 @@
+---
+- name: register variable with when condition
+  hosts: all
+  become: yes
+  tasks:
+    - name: check if vagrant user is present
+      shell: ls -lrth /home/ | grep vagrant
+      register: check_vagrant_user
+    - name: print if user is present
+      debug:
+        msg: "Vagrant user is present on {{ ansible_host }}"
+      when: check_vagrant_user.rc == 0
+...        
