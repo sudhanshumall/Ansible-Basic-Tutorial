@@ -41,3 +41,7 @@ ansible-playbook example-2-delete-file-with-loop.yaml
 **Output** :
 
 ![image](https://drive.google.com/uc?export=view&id=13o_3xBWPO9dPZhJfI5xj1P_KTFUO1rBh)
+
+**Exercises** : Check your knowledge
+
+Please check **exercises** file added in this lesson and try to complete it.
