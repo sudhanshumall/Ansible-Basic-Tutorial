@@ -892,3 +892,7 @@ ansible-playbook example-3-disable-facts.yaml
 ![image](https://drive.google.com/uc?export=view&id=180wXYxCDsxeXuzL9MUM5MfCrm-7oqIT1)
 
 **Note** : Also, notice in the output thet we don't have any task like **"TASK [Gathering Facts]"**, as we have disabled facts.
+
+**Exercises** : Check your knowledge
+
+Please check **exercises** file added in this lesson and try to complete it.
